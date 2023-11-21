@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電車時刻表(白新線)</title>
+    <script>
+        var niigata = ['0502','0606','0644','0715','0733','0805','0945','1039','1142','1245','1343','1439','1541','1616','1642','1723','1802','1821','1845','1902','1918','1947','2020','2047','2122','2229','2308','2333']
+        var shibata = ['0526','0644','0724','0755','0809','0930','1019','1125','1218','1319','1426','1524','1618','1652','1725','1806','1838','1857','1923','1939','1956','2031','2057','2124','2202','2303','2341','0007']
+        var answer = prompt('現在の時刻を教えてください。')
+        for (var i = 0; i < niigata.length; i++) {
+            if (answer < niigata[i]){
+                alert('次の電車は' + niigata[i].slice(0,2) + ':' + niigata[i].slice(2,4) + '発' + shibata[i].slice(0,2) + ':' + shibata[i].slice(2,4) + '着です。')
+                break
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
